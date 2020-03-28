@@ -3,7 +3,8 @@ var SWITCHES = [
     "rtsp_h264", "rtsp_mjpeg", "auto_night_detection",
     "mqtt_status", "mqtt_control",
     "sound_on_startup", "motion_detection", "motion_mail", "motion_telegram",
-    "motion_led","motion_snapshot","motion_mqtt", "motion_mqtt_snapshot", "motion_mqtt_video"];
+    "motion_led","motion_snapshot","motion_mqtt", "motion_mqtt_snapshot", "motion_mqtt_video",
+    "telnet_daemon"];
 
 var timeoutJobs = {};
 

@@ -596,6 +596,25 @@ motion_mqtt_video(){
   esac
 }
 
+# Start/stop telnetd
+telnet_daemon(){
+  case "$1" in
+  on)
+    telnetd &
+    ;;
+  off)
+    killall telnetd
+    ;;
+  status)
+    if pidof telnetd > /dev/null; then
+        echo "ON"
+    else
+	echo "OFF"
+    fi
+    ;;
+  esac
+}
+
 # Control the night mode
 night_mode(){
   case "$1" in

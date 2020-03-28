@@ -707,6 +707,21 @@ if [ -n "$F_cmd" ]; then
          return
          ;;
 
+    telnet_daemon_off)
+         telnet_daemon off
+         return
+         ;;
+
+    telnet_daemon_on)
+         telnet_daemon on
+         return
+         ;;
+
+    telnet_daemon_status)
+         telnet_daemon status
+         return
+         ;;
+
      show_HWmodel)
           detect_model
           return

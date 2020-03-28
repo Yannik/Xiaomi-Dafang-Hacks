@@ -146,6 +146,14 @@ if [ -n "$F_cmd" ]; then
     fi
     ;;
 
+  telnet_daemon)
+    if pidof telnetd > /dev/null; then
+      echo "ON"
+    else
+      echo "OFF"
+    fi
+    ;;
+
   hostname)
     echo $(hostname);
     ;;
